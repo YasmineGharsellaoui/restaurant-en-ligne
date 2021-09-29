@@ -1,0 +1,110 @@
+@import './../../../_variables.scss';
+
+.restaurant-item {
+  cursor: pointer;
+
+  .r-card {
+    height: $card-height;
+    padding: 0;
+    border: 1px;
+    border-style: solid;
+    border-color: $border-color !important;
+    box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.1);
+
+      .img-container {
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+        height: 100%;
+        width: $card-height;
+        background: $img-bg;
+
+        img {
+          border-top-left-radius: $border-radius;
+          border-bottom-left-radius: $border-radius;
+          background: $img-bg;
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .mobile-img-container {
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+        height: 100%;
+        width: 30px;
+        background: $img-bg;
+
+        img {
+          border-top-left-radius: $border-radius;
+          border-bottom-left-radius: $border-radius;
+          background: $img-bg;
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .home-detail {
+        height: $card-height;
+        width: auto;
+        padding: $content-padding;
+
+        .r-name {
+        }
+        .rating-stars {
+          position: relative;
+          .review-summary {
+            font-size: 12px;
+            height: 20px;
+          }
+          .r-margin {
+            position: absolute;
+            top: 0;
+            margin: 2px 8px;
+          }
+        }
+
+        .status {
+          align-items: center;
+
+          .status-name {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: lighter;
+            font-size: 15px;
+          }
+        }
+        .status-icon {
+          margin-right: 12px;
+          vertical-align: middle;
+          display: inline-block;
+          height: 13px;
+          width: 13px;
+          border-radius: 50%;
+          display: inline-block;
+          border: 3px solid $status-grey;
+          background-color: $status-grey;
+
+          &.open{
+            border: 3px solid $status-blue;
+            background-color: $status-blue;
+          }
+        }
+        .reviews {
+          align-items: center;
+
+          .review-name {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: lighter;
+            font-size: 15px;
+            padding-left: 2.5px;
+          }
+
+          .review-icon {
+            color: $status-grey;
+            padding-right: 8px;
+          }
+        }
+      }
+  }
+}
